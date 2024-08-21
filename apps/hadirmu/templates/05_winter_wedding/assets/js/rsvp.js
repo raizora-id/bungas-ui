@@ -43,17 +43,32 @@ document.addEventListener("DOMContentLoaded", () => {
   function addComment(comment) {
     const commentElement = document.createElement("div");
     commentElement.classList.add("comment");
+    commentElement.setAttribute("data-id", comment.id); // Set a data attribute for easy reference
     commentElement.innerHTML = `
-              <strong>${comment.username}</strong>
-              <p>${comment.text}</p>
-              <p>${comment.attendance}</p>
-          `;
+        <strong>${comment.username}</strong>
+        <p>${comment.text}</p>
+        <p>${comment.attendance}</p>
+    `;
     commentsContainer.appendChild(commentElement);
+
+    // Add event listener to the delete button
+    // commentElement
+    //   .querySelector(".delete-comment")
+    //   .addEventListener("click", () => {
+    //     deleteComment(comment.id);
+    //     commentElement.remove(); // Remove the comment element from the DOM
+    //   });
   }
 
   function saveComment(comment) {
     const comments = JSON.parse(localStorage.getItem("comments")) || [];
     comments.push(comment);
+    localStorage.setItem("comments", JSON.stringify(comments));
+  }
+
+  function deleteComment(commentId) {
+    let comments = JSON.parse(localStorage.getItem("comments")) || [];
+    comments = comments.filter((comment) => comment.id !== commentId);
     localStorage.setItem("comments", JSON.stringify(comments));
   }
 });

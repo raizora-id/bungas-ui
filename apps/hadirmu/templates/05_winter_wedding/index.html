@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--Theme Title-->
-    <title>Wedding Responsive HTML Template</title>
+    <title>Undangan Hadirmu 3</title>
     <meta name="description" content="" />
 
     <!-- Place favicon.ico in the root directory -->
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="assets/css/gift-style.css" />
 
     <link rel="stylesheet" href="assets/css/rsvp.css" />
+    <link rel="stylesheet" href="assets/css/awal.css" />
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -38,15 +39,26 @@
     <![endif]-->
   </head>
   <body>
-    <!-- preloader Start -->
-    <div id="preloader">
-      <div id="status">
-        <img src="preloader.gif" id="preloader_image" alt="loader" />
-      </div>
-    </div>
+   <!-- Halaman Mulai -->
+<div id="start-page" style="display: block;">
+  <div class="start-content">
+    <img src="assets/images/banner/1.jpg" alt="Logo">
+    <h2
+    class="wow animated fadeInDown " 
+    >Undangan Pernikahan</h2>
+    <p class="wow animated zoomIn">Jhon & Alisa</p>
+    <button id="start-button"
+    class="wow animated fadeInUp"
+    data-wow-duration="2s">Buka Undangan</button>
+    <audio id="background-music" controls autoplay loop style="display: none;">
+      <source src="assets/audio/wedd.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
 
     <!--Header area start here-->
-    <header id="sticky">
+    <!-- <header id="sticky">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-3 col-xs-9">
@@ -73,9 +85,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!--Responsive Menu area-->
-      <div class="mobilemenu">
+      <!-- <div class="mobilemenu">
         <div class="mobile-menu menu_scroll visible-xs">
           <nav>
             <ul>
@@ -90,16 +102,24 @@
             </ul>
           </nav>
         </div>
-      </div>
+      </div> -->
       <!--Responsive Menu area End-->
-    </header>
-    <!--Header area end here-->
+      
+      <div id="main-content" style="display: none;">
+      </header>
+        <div id="preloader">
+          <div id="status">
+            <img src="preloader.gif" id="preloader_image" alt="loader" />
+          </div>
+        </div>
+      <!--Header area end here-->
+
+
     <!--Slider area start here-->
     <section section-scroll="0" class="slider-area">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12 pd-0">
-            <div class="slider_home">
               <div class="item one">
                 <div class="container">
                   <div class="row">
@@ -132,88 +152,20 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="item two">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="content">
-                        <p
-                          class="wow animated fadeInDown"
-                          data-wow-duration="1.3s"
-                        >
-                          We Hope to See You Soon
-                        </p>
-                        <h2
-                          class="wow animated fadeInDown"
-                          data-wow-duration="1s"
-                        >
-                          Johan <span>&</span> jaquline
-                        </h2>
-                        <h3
-                          class="wow animated fadeInUp"
-                          data-wow-duration="1s"
-                        >
-                          29/01/2018
-                        </h3>
-                        <br />
-                        <span
-                          class="date wow animated fadeInUp"
-                          data-wow-duration="1.3s"
-                          >Save the date</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item three">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="content">
-                        <p
-                          class="wow animated fadeInDown"
-                          data-wow-duration="1.3s"
-                        >
-                          We Hope to See You Soon
-                        </p>
-                        <h2
-                          class="wow animated fadeInDown"
-                          data-wow-duration="1s"
-                        >
-                          Johan <span>&</span> jaquline
-                        </h2>
-                        <h3
-                          class="wow animated fadeInUp"
-                          data-wow-duration="1s"
-                        >
-                          29/01/2018
-                        </h3>
-                        <br />
-                        <span
-                          class="date wow animated fadeInUp"
-                          data-wow-duration="1.3s"
-                          >Save the date</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+             
+           
         </div>
       </div>
     </section>
     <!--Slider area End here-->
-    <!--Counter area start here-->
-    <section class="counter-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="content">
+
+      
+<!--Counter area start here-->
+<section class="counter-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="content">
               <p>Missing Days to</p>
               <h2>Our Wedding</h2>
               <span><img src="assets/images/icons/1.png" alt="" /></span>
@@ -294,7 +246,7 @@
             <div class="persons-con">
               <h1>Invitation</h1>
               <span class="ico"
-                ><img src="assets/images/icons/2.png" alt=""
+              ><img src="assets/images/icons/2.png" alt=""
               /></span>
               <span class="day">Friday</span>
               <strong>27/12/2017</strong>
@@ -330,329 +282,6 @@
       </div>
     </section>
     <!--persons area End here-->
-    <!--Family area start here-->
-    <section class="family-area section bg-img jarallax af">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="section_heading">
-              <p>ARE GETTING MARRIED!</p>
-              <h2>LOVABLE FAMILY</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="family-tabbox">
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active">
-                  <a
-                    href="#groom"
-                    aria-controls="groom"
-                    role="tab"
-                    data-toggle="tab"
-                    ><img src="assets/images/family/sm-1.jpg" alt=""
-                  /></a>
-                </li>
-                <li role="presentation">
-                  <a
-                    href="#bride"
-                    aria-controls="bride"
-                    role="tab"
-                    data-toggle="tab"
-                    ><img src="assets/images/family/sm-2.jpg" alt=""
-                  /></a>
-                </li>
-              </ul>
-              <!-- Nav tabs End-->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade in active" id="groom">
-                  <div class="familyslider">
-                    <div class="item love col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/1.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera Kplex</h2>
-                        <p>(Joahn’s Father)</p>
-                      </div>
-                    </div>
-                    <div class="item love col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/2.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Jallifar Kplex</h2>
-                        <p>(Joahn’s Mother)</p>
-                      </div>
-                    </div>
-                    <div class="item love col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/3.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera kplex</h2>
-                        <p>(Joahn’s Father)</p>
-                      </div>
-                    </div>
-                    <div class="item br_rn col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/4.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera kplex</h2>
-                        <p>(Joahn’s Mother)</p>
-                      </div>
-                    </div>
-                    <div class="item col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/5.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Jonsina Kplix</h2>
-                        <p>(Joahn’s Brother)</p>
-                      </div>
-                    </div>
-                    <div class="item col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/6.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Palxia Kplix</h2>
-                        <p>(Joahn’s Sister)</p>
-                      </div>
-                    </div>
-                    <div class="item col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/7.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera Kplex</h2>
-                        <p>(Joahn’s Brother)</p>
-                      </div>
-                    </div>
-                    <div class="item br_rn col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/8.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera Kplex</h2>
-                        <p>(Joahn’s Sister)</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="bride">
-                  <div class="familyslider">
-                    <div class="item love col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/1.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera Kplex</h2>
-                        <p>(Joahn’s Father)</p>
-                      </div>
-                    </div>
-                    <div class="item love col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/2.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Jallifar Kplex</h2>
-                        <p>(Joahn’s Mother)</p>
-                      </div>
-                    </div>
-                    <div class="item love col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/3.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera kplex</h2>
-                        <p>(Joahn’s Father)</p>
-                      </div>
-                    </div>
-                    <div class="item br_rn col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/4.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera kplex</h2>
-                        <p>(Joahn’s Mother)</p>
-                      </div>
-                    </div>
-                    <div class="item col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/5.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Jonsina Kplix</h2>
-                        <p>(Joahn’s Brother)</p>
-                      </div>
-                    </div>
-                    <div class="item col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/6.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Palxia Kplix</h2>
-                        <p>(Joahn’s Sister)</p>
-                      </div>
-                    </div>
-                    <div class="item col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/7.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera Kplex</h2>
-                        <p>(Joahn’s Brother)</p>
-                      </div>
-                    </div>
-                    <div class="item br_rn col-md-3 col-sm-6">
-                      <figure>
-                        <img src="assets/images/family/8.jpg" alt="" />
-                      </figure>
-                      <div class="content">
-                        <h2>Mr. Plera Kplex</h2>
-                        <p>(Joahn’s Sister)</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Family area End here-->
-    <!--Love story area start here-->
-    <section section-scroll="2" class="love-story section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="section_heading">
-              <p>Joahn & Jaquline</p>
-              <h2>Our True love story</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="love-storys">
-              <div class="story-list">
-                <div class="col-md-6 col-sm-12 pd-0">
-                  <div class="story lefts">
-                    <div class="storys">
-                      <div class="top-fig">
-                        <figure>
-                          <img src="assets/images/story/1.jpg" alt="" />
-                        </figure>
-                        <div class="con">
-                          <p>12 jan 2018</p>
-                          <h2>How to meet</h2>
-                        </div>
-                      </div>
-                      <div class="content">
-                        <p>
-                          Lorem Ipsum. Proin gravida nibh vel velit auctor
-                          aliquet. Aenean sollicitudin, lorem quis bibendum
-                          auctor, nisi elit consequat.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="story lefts">
-                    <div class="storys">
-                      <div class="top-fig">
-                        <figure>
-                          <img src="assets/images/story/3.jpg" alt="" />
-                        </figure>
-                        <div class="con">
-                          <p>12 jan 2018</p>
-                          <h2>How to meet</h2>
-                        </div>
-                      </div>
-                      <div class="content">
-                        <p>
-                          Lorem Ipsum. Proin gravida nibh vel velit auctor
-                          aliquet. Aenean sollicitudin, lorem quis bibendum
-                          auctor, nisi elit consequat.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="story lefts">
-                    <div class="storys">
-                      <div class="top-fig">
-                        <figure>
-                          <img src="assets/images/story/5.jpg" alt="" />
-                        </figure>
-                        <div class="con">
-                          <p>12 jan 2018</p>
-                          <h2>How to meet</h2>
-                        </div>
-                      </div>
-                      <div class="content">
-                        <p>
-                          Lorem Ipsum. Proin gravida nibh vel velit auctor
-                          aliquet. Aenean sollicitudin, lorem quis bibendum
-                          auctor, nisi elit consequat.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-12 pd-0">
-                  <div class="story rights first">
-                    <div class="storys">
-                      <div class="top-fig">
-                        <figure>
-                          <img src="assets/images/story/2.jpg" alt="" />
-                        </figure>
-                        <div class="con">
-                          <p>12 jan 2018</p>
-                          <h2>How to meet</h2>
-                        </div>
-                      </div>
-                      <div class="content">
-                        <p>
-                          Lorem Ipsum. Proin gravida nibh vel velit auctor
-                          aliquet. Aenean sollicitudin, lorem quis bibendum
-                          auctor, nisi elit consequat.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="story rights">
-                    <div class="storys">
-                      <div class="top-fig">
-                        <figure>
-                          <img src="assets/images/story/4.jpg" alt="" />
-                        </figure>
-                        <div class="con">
-                          <p>12 jan 2018</p>
-                          <h2>How to meet</h2>
-                        </div>
-                      </div>
-                      <div class="content">
-                        <p>
-                          Lorem Ipsum. Proin gravida nibh vel velit auctor
-                          aliquet. Aenean sollicitudin, lorem quis bibendum
-                          auctor, nisi elit consequat.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Love story area End here-->
     <!--Registery area start here-->
     <section class="registery-area section bg-img af jarallax">
       <div class="container">
@@ -691,35 +320,13 @@
                   velit. Nam nec tellus.
                 </p>
               </div>
-              <div class="reg-slider">
-                <div class="list-slider">
-                  <a href="#"><img src="assets/images/brand/1.jpg" alt="" /></a>
-                  <a href="#"><img src="assets/images/brand/2.jpg" alt="" /></a>
-                </div>
-                <div class="list-slider">
-                  <a href="#"><img src="assets/images/brand/3.jpg" alt="" /></a>
-                  <a href="#"><img src="assets/images/brand/1.jpg" alt="" /></a>
-                </div>
-                <div class="list-slider">
-                  <a href="#"><img src="assets/images/brand/1.jpg" alt="" /></a>
-                  <a href="#"><img src="assets/images/brand/2.jpg" alt="" /></a>
-                </div>
-                <div class="list-slider">
-                  <a href="#"><img src="assets/images/brand/3.jpg" alt="" /></a>
-                  <a href="#"><img src="assets/images/brand/1.jpg" alt="" /></a>
-                </div>
-                <div class="list-slider">
-                  <a href="#"><img src="assets/images/brand/1.jpg" alt="" /></a>
-                  <a href="#"><img src="assets/images/brand/2.jpg" alt="" /></a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!--Registery area End here-->
-
+    
     <!-- RSVP Wrapper Start-->
     <section section-scroll="7" class="rspv-area">
       <div class="comment-section" class="container">
@@ -728,159 +335,299 @@
           <p>UNTUK KAMI BERDUA</p>
         </div>
         <input
-          type="text"
-          id="username-input"
-          placeholder="Masukkan Nama Anda"
+        type="text"
+        id="username-input"
+        placeholder="Masukkan Nama Anda"
         />
         <textarea
-          id="comment-input"
-          placeholder="Masukkan Pesan Anda"
+        id="comment-input"
+        placeholder="Masukkan Pesan Anda"
         ></textarea>
-
+        
         <!-- Confirmation of attendance -->
         <div
-          class="attendance-confirmation"
-          class="bottom-btn text-center mr-t50"
+        class="attendance-confirmation"
+        class="bottom-btn text-center mr-t50"
         >
-          <label for="attendance">Konfirmasi Kehadiran</label>
-          <select id="attendance">
-            <option value="Hadir">Hadir</option>
-            <option value="Tidak Hadir">Tidak Hadir</option>
-          </select>
-          <div>
-            <button id="submit-comment" class="bottom-btn text-center mr-t50">
-              Submit
-            </button>
-          </div>
-          <h3>Comments</h3>
-          <div id="comments-container"></div>
+        <label for="attendance">Konfirmasi Kehadiran</label>
+        <select id="attendance">
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+        <div>
+          <button id="submit-comment" class="bottom-btn text-center mr-t50">
+            Submit
+          </button>
         </div>
+        <h3>Comments</h3>
+        <div id="comments-container"></div>
       </div>
-    </section>
-
-    <!-- RSVP Wrapper End -->
-
-    <!--Event area start here-->
-    <section section-scroll="3" class="event-area section2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="section_heading">
-              <p>Most awaited moment of our life</p>
-              <h2>The Wedding Events</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-4">
-            <div class="events line">
-              <h2>Main Ceremony</h2>
-              <div class="con">
-                <ul>
-                  <li>
-                    <i class="fas fa-calendar-alt"></i><span>10 june 2018</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-clock"></i
-                    ><span> 10:00 AM to 12:00 PM</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-map-marker-alt"></i
-                    ><span>3355, Wayside Lane,<br />PIcland, CA 94601</span>
-                  </li>
-                </ul>
-              </div>
-              <a href="#"
-                ><span><i class="fas fa-map-marker-alt"></i>Open Map</span></a
-              >
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-4">
-            <div class="events event_half line">
-              <h2>Wedding Party</h2>
-              <div class="con">
-                <ul>
-                  <li>
-                    <i class="fas fa-calendar-alt"></i><span>10 june 2018</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-clock"></i
-                    ><span> 10:00 AM to 12:00 PM</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-map-marker-alt"></i
-                    ><span>3355, Wayside Lane,<br />PIcland, CA 94601</span>
-                  </li>
-                </ul>
-              </div>
-              <a href="#"
-                ><span><i class="fas fa-map-marker-alt"></i>Open Map</span></a
-              >
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-4">
-            <div class="events">
-              <h2>Dinner Party</h2>
-              <div class="con">
-                <ul>
-                  <li>
-                    <i class="fas fa-calendar-alt"></i><span>10 june 2018</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-clock"></i
-                    ><span> 10:00 AM to 12:00 PM</span>
-                  </li>
-                  <li>
-                    <i class="fas fa-map-marker-alt"></i
-                    ><span>3355, Wayside Lane,<br />PIcland, CA 94601</span>
-                  </li>
-                </ul>
-              </div>
-              <a href="#"
-                ><span><i class="fas fa-map-marker-alt"></i>Open Map</span></a
-              >
-            </div>
+    </div>
+  </section>
+  
+  <!-- RSVP Wrapper End -->
+  
+  <!--Event area start here-->
+  <section section-scroll="3" class="event-area section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="section_heading">
+            <p>Most awaited moment of our life</p>
+            <h2>The Wedding Events</h2>
           </div>
         </div>
       </div>
-    </section>
-    <!--Event area End here-->
-    <!--Gallery wrapper start here-->
-    <section section-scroll="4" class="gallery-area section bg-img jarallax af">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 col-col-sm-12">
-            <div class="section_heading">
-              <p>Joahn & Jaquline</p>
-              <h2>memorable photo gallery</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-4">
+          <div class="events line">
+            <h2>Main Ceremony</h2>
+            <div class="con">
+              <ul>
+                <li>
+                  <i class="fas fa-calendar-alt"></i><span>10 june 2018</span>
+                </li>
+                <li>
+                  <i class="fas fa-clock"></i
+                    ><span> 10:00 AM to 12:00 PM</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                      ><span>3355, Wayside Lane,<br />PIcland, CA 94601</span>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#"
+                ><span><i class="fas fa-map-marker-alt"></i>Open Map</span></a
+                >
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-sm-12 pd-0">
-            <div class="gallery-slider">
+            <div class="col-md-6 col-sm-4">
+              <div class="events event_half line">
+                <h2>Wedding Party</h2>
+                <div class="con">
+                  <ul>
+                    <li>
+                      <i class="fas fa-calendar-alt"></i><span>10 june 2018</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-clock"></i
+                        ><span> 10:00 AM to 12:00 PM</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-map-marker-alt"></i
+                          ><span>3355, Wayside Lane,<br />PIcland, CA 94601</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="#"
+                    ><span><i class="fas fa-map-marker-alt"></i>Open Map</span></a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                  <div class="events">
+                    <h2>Dinner Party</h2>
+                    <div class="con">
+                      <ul>
+                        <li>
+                          <i class="fas fa-calendar-alt"></i><span>10 june 2018</span>
+                        </li>
+                        <li>
+                          <i class="fas fa-clock"></i
+                            ><span> 10:00 AM to 12:00 PM</span>
+                          </li>
+                          <li>
+                            <i class="fas fa-map-marker-alt"></i
+                              ><span>3355, Wayside Lane,<br />PIcland, CA 94601</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#"
+                        ><span><i class="fas fa-map-marker-alt"></i>Open Map</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!--Event area End here-->
+              <!--Gallery wrapper start here-->
+              <section section-scroll="4" class="gallery-area section bg-img jarallax af">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12 col-col-sm-12">
+                      <div class="section_heading">
+                        <p>Joahn & Jaquline</p>
+                        <h2>memorable photo gallery</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 pd-0">
+                      <div class="gallery-slider">
+                        <div class="col-sm-12">
+                          <div class="glist">
+                            <figure>
+                              <a href="assets/images/gallery/1.jpg"
+                              ><img src="assets/images/gallery/1.jpg" alt="" /><span
+                              ><i class="fas fa-search"></i></span
+                              ></a>
+                            </figure>
+                          </div>
+                          <div class="glist">
+                            <figure>
+                              <a href="assets/images/gallery/2.jpg"
+                              ><img src="assets/images/gallery/2.jpg" alt="" /><span
+                              ><i class="fas fa-search"></i></span
+                              ></a>
+                            </figure>
+                          </div>
+                          <div class="glist">
+                            <figure>
+                              <a href="assets/images/gallery/3.jpg"
+                              ><img src="assets/images/gallery/3.jpg" alt="" /><span
+                              ><i class="fas fa-search"></i></span
+                              ></a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="glist">
+                            <figure>
+                              <a href="assets/images/gallery/4.jpg"
+                              ><img src="assets/images/gallery/4.jpg" alt="" /><span
+                              ><i class="fas fa-search"></i></span
+                              ></a>
+                            </figure>
+                          </div>
+                          <div class="glist">
+                            <figure>
+                              <a href="assets/images/gallery/5.jpg"
+                              ><img src="assets/images/gallery/5.jpg" alt="" /><span
+                              ><i class="fas fa-search"></i></span
+                              ></a>
+                            </figure>
+                          </div>
+                        </div>
+                      <div class="col-sm-12">
+                        <div class="glist">
+                          <figure>
+                            <a href="assets/images/gallery/6.jpg"
+                            ><img src="assets/images/gallery/6.jpg" alt="" /><span
+                            ><i class="fas fa-search"></i></span
+                            ></a>
+                          </figure>
+                        </div>
+                        <div class="glist">
+                          <figure>
+                            <a href="assets/images/gallery/7.jpg"
+                            ><img src="assets/images/gallery/7.jpg" alt="" /><span
+                            ><i class="fas fa-search"></i></span
+                            ></a>
+                          </figure>
+                        </div>
+                        <div class="glist">
+                          <figure>
+                            <a href="assets/images/gallery/8.jpg"
+                            ><img src="assets/images/gallery/8.jpg" alt="" /><span
+                            ><i class="fas fa-search"></i></span
+                            ></a>
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="glist">
+                          <figure>
+                            <a href="assets/images/gallery/1.jpg"
+                            ><img src="assets/images/gallery/1.jpg" alt="" /><span
+                            ><i class="fas fa-search"></i></span
+                            ></a>
+                          </figure>
+                        </div>
+                        <div class="glist">
+                          <figure>
+                            <a href="assets/images/gallery/2.jpg"
+                            ><img src="assets/images/gallery/2.jpg" alt="" /><span
+                            ><i class="fas fa-search"></i></span
+                            ></a>
+                          </figure>
+                        </div>
+                        <div class="glist">
+                          <figure>
+                            <a href="assets/images/gallery/3.jpg"
+                            ><img src="assets/images/gallery/3.jpg" alt="" /><span
+                            ><i class="fas fa-search"></i></span
+                            ></a>
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="glist">
+                          <figure>
+                            <a href="assets/images/gallery/4.jpg"
+                            ><img src="assets/images/gallery/4.jpg" alt="" /><span
+                            ><i class="fas fa-search"></i></span
+                            ></a>
+                          </figure>
+                        </div>
+                        <div class="glist">
+                          <figure>
+                            <a href="assets/images/gallery/5.jpg"
+                            ><img src="assets/images/gallery/5.jpg" alt="" /><span
+                            ><i class="fas fa-search"></i></span
+                            ></a>
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                <div class="glist">
+                  <figure>
+                    <a href="assets/images/gallery/6.jpg"
+                    ><img src="assets/images/gallery/6.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
+                    ></a>
+                  </figure>
+                </div>
+                <div class="glist">
+                  <figure>
+                    <a href="assets/images/gallery/7.jpg"
+                    ><img src="assets/images/gallery/7.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
+                    ></a>
+                  </figure>
+                </div>
+                <div class="glist">
+                  <figure>
+                    <a href="assets/images/gallery/8.jpg"
+                    ><img src="assets/images/gallery/8.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
+                    ></a>
+                  </figure>
+                </div>
+              </div>
               <div class="col-sm-12">
                 <div class="glist">
                   <figure>
                     <a href="assets/images/gallery/1.jpg"
-                      ><img src="assets/images/gallery/1.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
+                    ><img src="assets/images/gallery/1.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
                     ></a>
                   </figure>
                 </div>
                 <div class="glist">
                   <figure>
                     <a href="assets/images/gallery/2.jpg"
-                      ><img src="assets/images/gallery/2.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
+                    ><img src="assets/images/gallery/2.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
                     ></a>
                   </figure>
                 </div>
                 <div class="glist">
                   <figure>
                     <a href="assets/images/gallery/3.jpg"
-                      ><img src="assets/images/gallery/3.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
+                    ><img src="assets/images/gallery/3.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
                     ></a>
                   </figure>
                 </div>
@@ -889,16 +636,16 @@
                 <div class="glist">
                   <figure>
                     <a href="assets/images/gallery/4.jpg"
-                      ><img src="assets/images/gallery/4.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
+                    ><img src="assets/images/gallery/4.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
                     ></a>
                   </figure>
                 </div>
                 <div class="glist">
                   <figure>
                     <a href="assets/images/gallery/5.jpg"
-                      ><img src="assets/images/gallery/5.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
+                    ><img src="assets/images/gallery/5.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
                     ></a>
                   </figure>
                 </div>
@@ -907,164 +654,24 @@
                 <div class="glist">
                   <figure>
                     <a href="assets/images/gallery/6.jpg"
-                      ><img src="assets/images/gallery/6.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
+                    ><img src="assets/images/gallery/6.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
                     ></a>
                   </figure>
                 </div>
                 <div class="glist">
                   <figure>
                     <a href="assets/images/gallery/7.jpg"
-                      ><img src="assets/images/gallery/7.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
+                    ><img src="assets/images/gallery/7.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
                     ></a>
                   </figure>
                 </div>
                 <div class="glist">
                   <figure>
                     <a href="assets/images/gallery/8.jpg"
-                      ><img src="assets/images/gallery/8.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/1.jpg"
-                      ><img src="assets/images/gallery/1.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/2.jpg"
-                      ><img src="assets/images/gallery/2.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/3.jpg"
-                      ><img src="assets/images/gallery/3.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/4.jpg"
-                      ><img src="assets/images/gallery/4.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/5.jpg"
-                      ><img src="assets/images/gallery/5.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/6.jpg"
-                      ><img src="assets/images/gallery/6.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/7.jpg"
-                      ><img src="assets/images/gallery/7.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/8.jpg"
-                      ><img src="assets/images/gallery/8.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/1.jpg"
-                      ><img src="assets/images/gallery/1.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/2.jpg"
-                      ><img src="assets/images/gallery/2.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/3.jpg"
-                      ><img src="assets/images/gallery/3.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/4.jpg"
-                      ><img src="assets/images/gallery/4.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/5.jpg"
-                      ><img src="assets/images/gallery/5.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/6.jpg"
-                      ><img src="assets/images/gallery/6.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/7.jpg"
-                      ><img src="assets/images/gallery/7.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
-                    ></a>
-                  </figure>
-                </div>
-                <div class="glist">
-                  <figure>
-                    <a href="assets/images/gallery/8.jpg"
-                      ><img src="assets/images/gallery/8.jpg" alt="" /><span
-                        ><i class="fas fa-search"></i></span
+                    ><img src="assets/images/gallery/8.jpg" alt="" /><span
+                    ><i class="fas fa-search"></i></span
                     ></a>
                   </figure>
                 </div>
@@ -1079,203 +686,141 @@
     <div section-scroll="5">
       <div>
         <div
-          class="wd_heading wow fadeInDown text-center"
-          data-wow-delay="0.3s"
+        class="wd_heading wow fadeInDown text-center"
+        data-wow-delay="0.3s"
         >
-          <div class="section-heading">
-            <h1>Kirim Hadiah</h1>
+        <div class="section-heading">
+          <h1>Kirim Hadiah</h1>
+          <p>
+            jika Anda ingin memberikan hadiah, kami telah menyediakan beberapa
+            pilihan di bawah ini:
+          </p>
+        </div>
+        <div class="gift-options">
+          <div class="gift-option">
+            <h2>BRI</h2>
+            <img src="assets/images/bri.png" alt="BRI" class="gift-image" />
             <p>
-              jika Anda ingin memberikan hadiah, kami telah menyediakan beberapa
-              pilihan di bawah ini:
+              Bank BRI<br />Account Number: 1234 5678 9012 3456<br />Nama: Eza
             </p>
           </div>
-          <div class="gift-options">
-            <div class="gift-option">
-              <h2>BRI</h2>
-              <img src="assets/images/bri.png" alt="BRI" class="gift-image" />
-              <p>
-                Bank BRI<br />Account Number: 1234 5678 9012 3456<br />Nama: Eza
-              </p>
+          <div class="gift-option">
+            <h2>DANA</h2>
+            <img
+            src="assets/images/dana.webp"
+            alt="DANA"
+            class="gift-image"
+            />
+            <p>Dana<br />Nomor : 0842 2832 1244<br />Nama : Sahreza</p>
+          </div>
+          <div class="gift-option">
+            <h2>QRIS</h2>
+            <img src="assets/images/qris.png" alt="QRIS" class="gift-image" />
+            <p>Scan the QR code to send your gift via QRIS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gift Wrapper End -->
+  <!--Testimonial area start here-->
+  <section class="testimonial-area bg-img jarallax af">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="testimonial">
+            <div class="lists">
+              <h2>
+                “ Better to have loved and lost, than to have never loved ”
+              </h2>
+              <p>Sandeep S.</p>
             </div>
-            <div class="gift-option">
-              <h2>DANA</h2>
-              <img
-                src="assets/images/dana.webp"
-                alt="DANA"
-                class="gift-image"
-              />
-              <p>Dana<br />Nomor : 0842 2832 1244<br />Nama : Sahreza</p>
+            <div class="lists">
+              <h2>
+                “ Better to have loved and lost, than to have never loved ”
+              </h2>
+              <p>Sandeep S.</p>
             </div>
-            <div class="gift-option">
-              <h2>QRIS</h2>
-              <img src="assets/images/qris.png" alt="QRIS" class="gift-image" />
-              <p>Scan the QR code to send your gift via QRIS.</p>
+            <div class="lists">
+              <h2>
+                “ Better to have loved and lost, than to have never loved ”
+              </h2>
+              <p>Sandeep S.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Gift Wrapper End -->
-    <!--Testimonial area start here-->
-    <section class="testimonial-area bg-img jarallax af">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="testimonial">
-              <div class="lists">
-                <h2>
-                  “ Better to have loved and lost, than to have never loved ”
-                </h2>
-                <p>Sandeep S.</p>
-              </div>
-              <div class="lists">
-                <h2>
-                  “ Better to have loved and lost, than to have never loved ”
-                </h2>
-                <p>Sandeep S.</p>
-              </div>
-              <div class="lists">
-                <h2>
-                  “ Better to have loved and lost, than to have never loved ”
-                </h2>
-                <p>Sandeep S.</p>
-              </div>
+  </section>
+  <!--Testimonial area End here-->
+  <!--Contact info area start here-->
+  <section class="contact-info section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <div class="info-list">
+            <span><img src="assets/images/icons/3.png" alt="" /></span>
+            <div class="con">
+              <h2>Location</h2>
+              <p>512 Ram Nagar,Dewas<br />madhya predesh,India</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="info-list">
+            <span><img src="assets/images/icons/4.png" alt="" /></span>
+            <div class="con">
+              <h2>Contact</h2>
+              <p>+1800-123-1233<br />+91975-789-789</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="info-list">
+            <span><img src="assets/images/icons/5.png" alt="" /></span>
+            <div class="con">
+              <h2>Email</h2>
+              <p>dummy148@gmail.com<br />example144875@yahoo.com</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--Testimonial area End here-->
-    <!--Contact info area start here-->
-    <section class="contact-info section2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4">
-            <div class="info-list">
-              <span><img src="assets/images/icons/3.png" alt="" /></span>
-              <div class="con">
-                <h2>Location</h2>
-                <p>512 Ram Nagar,Dewas<br />madhya predesh,India</p>
-              </div>
-            </div>
+    </div>
+  </section>
+  <!--Contact info area End here-->
+  <!--Footer wrapper start here-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <div class="foo-logo">
+            <a href="index.html"
+            ><img src="assets/images/logo/logo2.png" alt=""
+            /></a>
           </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="info-list">
-              <span><img src="assets/images/icons/4.png" alt="" /></span>
-              <div class="con">
-                <h2>Contact</h2>
-                <p>+1800-123-1233<br />+91975-789-789</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <div class="info-list">
-              <span><img src="assets/images/icons/5.png" alt="" /></span>
-              <div class="con">
-                <h2>Email</h2>
-                <p>dummy148@gmail.com<br />example144875@yahoo.com</p>
-              </div>
-            </div>
+        </div>
+        <div class="col-md-8 col-sm-8">
+          <div class="copyright">
+            <p>By Hadirmu</p>
           </div>
         </div>
       </div>
-    </section>
-    <!--Contact info area End here-->
-    <!--Contact area start here-->
-    <section section-scroll="6" class="contact_area bg-img af jarallax section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="section_heading">
-              <p>If Any Query</p>
-              <h2>Contact Us</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 col-sm-12 col-md-offset-2">
-            <div class="con-form">
-              <form>
-                <div class="col-sm-6">
-                  <fieldset>
-                    <input
-                      type="text"
-                      name="full_name"
-                      placeholder="Full Name"
-                      class="require"
-                    />
-                  </fieldset>
-                  <fieldset>
-                    <input
-                      type="Email"
-                      name="email"
-                      placeholder="Email"
-                      class="require"
-                      data-valid="email"
-                      data-error="Email should be valid."
-                    />
-                  </fieldset>
-                  <fieldset>
-                    <input
-                      type="number"
-                      name="contact_no"
-                      placeholder="Phone"
-                      class="require"
-                    />
-                  </fieldset>
-                </div>
-                <div class="col-sm-6">
-                  <fieldset>
-                    <textarea
-                      name="message"
-                      placeholder="Message"
-                      class="require"
-                    ></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="response"></div>
-                </div>
-                <div class="col-sm-12 text-center">
-                  <button
-                    type="button"
-                    class="submitForm btn1 mr-t50"
-                    form-type="contact"
-                  >
-                    Send a Message
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Contact area end here-->
-    <!--Footer wrapper start here-->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4">
-            <div class="foo-logo">
-              <a href="index.html"
-                ><img src="assets/images/logo/logo2.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="col-md-8 col-sm-8">
-            <div class="copyright">
-              <p>@ Copyright 2017 All Rights Reserved. By Webstrot</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--Footer wrapper end here-->
+    </div>
+  </div>
+  </div>
+</footer>
+<!--Footer wrapper end here-->
 
-    <!-- All JavaScript Here -->
+<!-- All JavaScript Here -->
 
-    <!-- jQuery latest version -->
+<!-- jQuery latest version -->
+<script>
+  document.getElementById('start-button').addEventListener('click', function() {
+    document.getElementById('start-page').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    document.getElementById('background-music').play();
+  });
+  </script>
     <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
