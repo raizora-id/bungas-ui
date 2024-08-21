@@ -30,6 +30,7 @@ Purchase:
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="css/rsvp.css" />
     <link rel="stylesheet" href="css/gift-style.css" />
+    <link rel="stylesheet" href="css/awal.css" />
     <!-- favicon links -->
     <link
       rel="shortcut icon"
@@ -39,15 +40,32 @@ Purchase:
   </head>
   <body>
     <!-- preloader Start -->
-    <div id="preloader">
-      <div id="status">
-        <img
-          src="images/header/preloader.gif"
-          id="preloader_image"
-          alt="loader"
-        />
+    <div id="start-page"  >
+      <div class="start-content" >
+        <img src="images/content/blog1.jpg" alt="Logo">
+        <h2 
+        class="wow animated fadeInDown " 
+        >Undangan Pernikahan</h2>
+        <p class="wow animated zoomIn">Jhon & Alisa</p>
+        <button id="start-button"
+        class="wow animated fadeInUp"
+                              data-wow-duration="2s">Buka Undangan</button>
+        <audio id="background-music" controls autoplay loop style="display: none;">
+          <source src="audio/wedd.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
       </div>
     </div>
+
+  </div>
+  <div id="main-content" style="display: none;">
+    <div id="preloader">
+      <div id="status">
+        <img src="preloader.gif" id="preloader_image" alt="loader" />
+      </div>
+    </div>
+    
+
     <!-- Header Wrapper Start -->
     <div section-scroll="0" class="wd_scroll_wrap">
       <div class="wd_slider_wrapper">
@@ -329,7 +347,7 @@ Purchase:
 
 
     <!-- doa wrapper -->
-    <div>
+    <!-- <div>
       <div class="wd_event_wrapper   wd_centerpadder50">
         <div class="container">
           <div class="row">
@@ -361,7 +379,7 @@ Purchase:
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- doa Wrapper End -->
 
 
@@ -403,7 +421,7 @@ Purchase:
         <div id="comments-container"></div>
       </div>
     </section>
-</div>
+
     <!-- RSVP Wrapper End -->
     
 
@@ -848,6 +866,7 @@ Purchase:
         </div>
       </div>
     </div>
+  </div>
     <!-- Footer Wrapper End -->
     <!--main js file start-->
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -860,6 +879,14 @@ Purchase:
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/rsvp.js"></script>
     <script>
+
+
+document.getElementById('start-button').addEventListener('click', function() {
+  document.getElementById('start-page').style.display = 'none';
+  document.getElementById('main-content').style.display = 'block';
+  document.getElementById('background-music').play();
+});
+
       $(window).on("load", function () {
         var wow = new WOW({
           boxClass: "wow",
