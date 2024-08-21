@@ -1,0 +1,162 @@
+.comment-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.comment-section h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.comment-section input[type="text"],
+.comment-section textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+  box-sizing: border-box;
+}
+
+.comment-section button {
+  padding: 15px 30px;
+  background-color: #66b956;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.comment-section button:hover {
+  background-color: #2afc0e;
+}
+
+#comments-container {
+  margin-top: 30px;
+  max-height: 400px; /* Maksimal tinggi kontainer komentar */
+  overflow-y: scroll; /* Menambahkan scrollbar jika konten melebihi tinggi maksimal */
+  padding-right: 10px; /* Tambahkan padding kanan untuk ruang scrollbar */
+}
+
+.comment {
+  position: relative;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comment:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.comment strong {
+  color: #444;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.comment p {
+  color: #777;
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+
+.comment .delete-comment {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.comment .delete-comment:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .comment-section {
+    padding: 20px;
+  }
+
+  .comment-section h2 {
+    font-size: 2em;
+  }
+
+  .comment-section button {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+
+  .comment {
+    padding: 15px;
+  }
+
+  #comments-container {
+    max-height: 300px; /* Sesuaikan tinggi maksimal untuk perangkat yang lebih kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .comment-section h2 {
+    font-size: 1.8em;
+  }
+
+  .comment-section button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+  }
+
+  .comment {
+    padding: 10px;
+  }
+
+  .comment .delete-comment {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+
+  #comments-container {
+    max-height: 200px; /* Sesuaikan tinggi maksimal untuk perangkat yang lebih kecil */
+  }
+}
+
+.attendance-confirmation {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.attendance-confirmation label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.attendance-confirmation select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+}

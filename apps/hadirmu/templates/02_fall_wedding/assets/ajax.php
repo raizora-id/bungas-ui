@@ -25,8 +25,8 @@ if(isset($_POST) && !empty($_POST)){
 	}
 	
 	if($sendMessage != ''){
-		$fromEmail = 'support@wedding.com';
-		$toEmail = 'webstrot@gmail.com';
+		$fromEmail = 'sahrezml@wedding.com';
+		$toEmail = 'sahrezml@gmail.com';
 		
 		$headers = "MIME-Version: 1.0" . "\r\n";
 		$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
