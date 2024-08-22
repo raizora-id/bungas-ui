@@ -13,7 +13,7 @@ Purchase:
   <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>Wedding Responsive HTML Template</title>
+    <title>Wedding</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="description" content="Wedding" />
     <meta name="keywords" content="Wedding, Marriage, Event, party, function" />
@@ -45,6 +45,7 @@ Purchase:
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/style-gift.css" />
     <link rel="stylesheet" type="text/css" href="css/rsvp.css" />
+    <link rel="stylesheet" type="text/css" href="css/awal.css" />
     <!-- favicon links -->
     <link
       rel="shortcut icon"
@@ -53,65 +54,33 @@ Purchase:
     />
   </head>
   <body>
-    <!-- preloader Start -->
-    <div id="preloader">
-      <div id="status">
-        <img
-          src="images/header/preloader.gif"
-          id="preloader_image"
-          alt="loader"
-        />
-      </div>
-    </div>
-    <!-- Header Wrapper Start -->
-    <div section-scroll="0" class="wd_scroll_wrap">
-      <div class="wd_slider_wrapper wd_single_index_menu">
-        <div class="wd_header_wrapper">
-          <div
-            class="col-lg-3 col-md-3 col-sm-12 col-xs-12 visible-xs visible-sm"
-          >
-            <div class="wd_logo">
-              <img
-                src="images/header/logo.png"
-                alt="Logo"
-                title="Logo"
-                class="img-responsive"
-              />
-              <button class="wd_menu_btn">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="wd_mainmenu_wrapper">
-              <div class="wd_main_menu_wrapper">
-                <div class="wd_main_menu wd_single_index_menu">
-                  <ul>
-                    <li><a href="0">Home</a></li>
-                    <li><a href="1">About Us</a></li>
-                    <li><a href="3">Events</a></li>
-                    <li class="hidden-xs hidden-sm">
-                      <a href="#">
-                        <img
-                          id="logo-navbar-middle"
-                          src="images/header/logo2.png"
-                          class="img-responsive"
-                          alt="logo"
-                      /></a>
-                    </li>
-                    <li><a href="4">Rsvp</a></li>
-                    <li><a href="6">Gallery</a></li>
-                    <li><a href="7">Gift</a></li>
-                    <li><a href="8">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+
+       <!-- preloader Start -->
+       <div id="start-page"  >
+        <div class="start-content" >
+          <img src="images/content/blog1.jpg" alt="Logo">
+          <h2 
+          class="wow animated fadeInDown " 
+          >Undangan Pernikahan</h2>
+          <p class="wow animated zoomIn">Jhon & Alisa</p>
+          <button id="start-button"
+          class="wow animated fadeInUp"
+                                data-wow-duration="2s">Buka Undangan</button>
+          <audio id="background-music" controls autoplay loop style="display: none;">
+            <source src="audio/wedd.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
         </div>
       </div>
+  
     </div>
-    <!-- Header Wrapper End -->
+    <div id="main-content" style="display: none;">
+      <div id="preloader">
+        <div id="status">
+          <img src="preloader.gif" id="preloader_image" alt="loader" />
+        </div>
+      </div>
+
     <div
       id="rev_slider_149_1_wrapper"
       class="rev_slider_wrapper fullscreen-container"
@@ -1322,7 +1291,7 @@ Purchase:
               alt="Logo"
               class="img-responsive"
             />
-            <p>@ Copyright 2017 All Rights Reserved. By Webstrot</p>
+            <p>By Hadirmu</p>
           </div>
         </div>
       </div>
@@ -1387,6 +1356,13 @@ Purchase:
     <script type="text/javascript" src="js/rsvp.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script>
+      document
+        .getElementById("start-button")
+        .addEventListener("click", function () {
+          document.getElementById("start-page").style.display = "none";
+          document.getElementById("main-content").style.display = "block";
+          document.getElementById("background-music").play();
+        });
       $(window).on("load", function () {
         var wow = new WOW({
           boxClass: "wow",
