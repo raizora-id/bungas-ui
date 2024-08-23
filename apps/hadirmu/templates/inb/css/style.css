@@ -1,0 +1,93 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif, "ObelixPro", "poetseone";
+  height: 100%;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.container > div {
+  scroll-snap-align: start;
+}
+
+.open-inv-btn {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #f8b195;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.open-inv-btn:hover {
+  background-color: #f67280;
+}
+.section {
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+h1,
+h2 {
+  color: white;
+  font-family: "ObelixPro";
+}
+.couple-names {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.event-details {
+  font-size: 1.2em;
+}
+.countdown {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #6c5b7b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* journey */
+
+.journey-details p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.journey-details p.show {
+  opacity: 1;
+  transform: translateY(0);
+}

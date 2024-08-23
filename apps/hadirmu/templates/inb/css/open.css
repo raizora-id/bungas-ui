@@ -1,0 +1,109 @@
+.cover {
+  background-image: url("../asset/images/IMG_20240818_134421_313.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cover-content {
+  position: relative;
+  z-index: 1;
+}
+.wedding-title {
+  font-size: 1em;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  font-family: poetseone;
+}
+.couple-names {
+  font-size: 1em;
+  color: #f36127;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.5s forwards;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.wedding-date {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 1s forwards;
+  margin-bottom: 10rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.dear-guest {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 1.5s forwards;
+  font-family: "poetseone";
+}
+.open-inv-btn {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.26);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 2s forwards;
+  border-radius: 2rem;
+}
+.open-inv-btn:hover {
+  background-color: rgba(255, 255, 255, 0.568);
+  transform: scale(1.05);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .cover {
+    background-position: top;
+  }
+
+  .wedding-title {
+    font-size: 1.5em;
+  }
+
+  .couple-names {
+    font-size: 2.5em;
+  }
+
+  .wedding-date {
+    font-size: 1.2em;
+  }
+
+  .dear-guest {
+    font-size: 1em;
+  }
+
+  .open-inv-btn {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
