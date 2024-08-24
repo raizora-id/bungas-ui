@@ -26,7 +26,7 @@
 
 .couple-section h3 {
   position: absolute;
-  top: 80px; /* Distance from the top edge */
+  top: 70px; /* Distance from the top edge */
   left: 20px;
   margin: 0;
   font-size: 2em;
@@ -35,7 +35,7 @@
 }
 
 .couple-section h1 {
-  padding-top: 80px;
+  padding-top: 70px;
   position: absolute;
   margin-top: 3rem;
   top: 30px; /* Distance from the top edge */

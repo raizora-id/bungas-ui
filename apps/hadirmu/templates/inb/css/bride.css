@@ -76,13 +76,12 @@
   .profile-bride {
     padding: 10px;
   }
+  .profile-bride h1 {
+    font-size: 2em;
+  }
 
   .profile-bride h2 {
     font-size: 1.2em;
-  }
-
-  .profile-bride h1 {
-    font-size: 2em;
   }
 
   .profile-bride p {
