@@ -24,20 +24,20 @@
   z-index: -1; /* Ensure overlay is behind content */
 }
 
-.bride-section {
+.profile-content {
   position: relative;
   z-index: 1; /* Ensure content is above the overlay */
 }
 
-.bride-section h2 {
+.profile-bride h2 {
   font-size: 1.5em;
-  color: #f8b195;
+  color: #ffffff;
   margin: 0;
   opacity: 0;
   animation: fadeIn 1s ease-in-out 2s forwards;
 }
 
-.bride-section h1 {
+.profile-bride h1 {
   font-size: 2.5em;
   color: #ffffff;
   margin: 10px 0;
@@ -45,12 +45,17 @@
   animation: fadeIn 1s ease-in-out 2.5s forwards;
 }
 
-.bride-section p {
+.profile-bride .name {
+  border-bottom: 2px solid #ffffff; /* White underline */
+  color: #eca15b;
+}
+
+.profile-bride p {
   font-size: 1.2em;
   margin: 0;
   opacity: 0;
   animation: fadeIn 1s ease-in-out 3s forwards;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins, sans-serif";
   margin-bottom: 10px;
 }
 
@@ -71,15 +76,15 @@
     padding: 10px;
   }
 
-  .bride-section h2 {
+  .profile-bride h2 {
     font-size: 1.2em;
   }
 
-  .bride-section h1 {
+  .profile-bride h1 {
     font-size: 2em;
   }
 
-  .bride-section p {
+  .profile-bride p {
     font-size: 1em;
   }
 }
@@ -89,15 +94,31 @@
     padding: 5px;
   }
 
-  .bride-section h2 {
+  .profile-bride h2 {
     font-size: 1em;
   }
 
-  .bride-section h1 {
+  .profile-bride h1 {
     font-size: 1.5em;
   }
 
-  .bride-section p {
+  .profile-bride p {
     font-size: 0.9em;
   }
+}
+
+.instagram-link-wedding-one {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transition: 0.5s;
+}
+a {
+  color: #f0f0f0;
+}
+
+.instagram-link-wedding-one:hover {
+  background-color: #ffffff91;
+  padding: 6px;
+  border-radius: 6px;
 }

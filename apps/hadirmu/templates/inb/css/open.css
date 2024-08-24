@@ -21,23 +21,48 @@
   background: rgba(0, 0, 0, 0.5);
 }
 .cover-content {
-  position: relative;
-  z-index: 1;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
+
+#invitation {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  min-height: 100vh;
+  z-index: 1; /* Keep invitation below the cover during transition */
+}
+
+#invitation.show {
+  display: block;
+  opacity: 1;
+}
+
+.section {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.section.visible {
+  opacity: 1;
+}
+
 .wedding-title {
   font-size: 1em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
-  font-family: poetseone;
+  font-family: "poppins,sans-serif";
+  font-weight: 700;
 }
 .couple-names {
-  font-size: 1em;
-  color: #f36127;
+  font-size: 32px;
+  color: #eca15b;
   margin-bottom: 10px;
   opacity: 0;
   animation: fadeIn 1s ease-out 0.5s forwards;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "poppins,sans-serif";
+  font-weight: 700;
+  line-height: 1;
 }
 .wedding-date {
   font-size: 1.5em;
@@ -52,6 +77,14 @@
   margin-bottom: 10px;
   opacity: 0;
   animation: fadeIn 1s ease-out 1.5s forwards;
+  font-family: "poetseone";
+}
+
+.dear-guest-bold {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 2s forwards;
   font-family: "poetseone";
 }
 .open-inv-btn {
@@ -70,7 +103,7 @@
   background-color: rgba(255, 255, 255, 0.568);
   transform: scale(1.05);
 }
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -79,7 +112,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 @media (max-width: 768px) {
   .cover {
@@ -87,19 +120,31 @@
   }
 
   .wedding-title {
-    font-size: 1.5em;
+    font-size: 1em;
+    letter-spacing: 0.2em;
   }
 
   .couple-names {
-    font-size: 2.5em;
+    font-size: 34px;
+    font-family: popins, sans-serif;
+    font-weight: 700;
   }
 
   .wedding-date {
     font-size: 1.2em;
+    font-family: "Courier New", Courier, monospace;
   }
 
   .dear-guest {
     font-size: 1em;
+    font-family: poppins, sans-serif;
+  }
+
+  .dear-guest-bold {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: poppins, sans-serif;
+    margin-bottom: 10px;
   }
 
   .open-inv-btn {

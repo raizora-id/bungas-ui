@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karina & Nathan's Wedding Invitation</title>
+    <link rel="stylesheet" href="/fontawesome/css/all.css" />
     <link
       rel="icon"
       href="asset/images/IMG_20240818_134421_313.jpg"
@@ -26,13 +27,13 @@
     <!-- halaman awal -->
     <div class="cover">
       <div class="cover-content">
-        <div class="wedding-title">Wedding Invitation</div>
+        <div class="wedding-title">Undangan Pernikahan</div>
         <div class="couple-names">Karina & Nathan</div>
         <div class="wedding-date">21.08.24</div>
         <div class="dear-guest">Dear</div>
-        <div class="dear-guest">Tamu Undangan</div>
+        <div class="dear-guest-bold">Tamu Undangan</div>
         <button class="open-inv-btn" onclick="openInvitation()">
-          Open Invitation
+          Buka Undangan
         </button>
       </div>
     </div>
@@ -40,20 +41,27 @@
     <div class="container" id="invitation" style="display: none">
       <!-- Couple Section -->
       <div class="couple-section" id="section1">
-        <h3>The Wedding Of</h3>
+        <h3>Pernikahan</h3>
         <h1>Karina & Nathan</h1>
+        <h4>21.08.24</h4>
         <p class="quote">
-          And one of His And one of His signs is that He created for you spouses
-          from among yourselves... And one of His signs is that He created for
-          you spouses from among yourselves...signs is that He created for you
-          spouses from among yourselves...
+          Dan salah satu tanda kekuasaan-Nya adalah Dia menciptakan untuk kamu
+          pasangan-pasangan dari jenis kamu sendiri agar kamu mendapat
+          kenyamanan di dalamnya. Dan Dia menjadikan di antara kamu kasih sayang
+          dan kasih sayang. Sesungguhnya pada yang demikian itu terdapat
+          tanda-tanda bagi orang-orang yang merenung
         </p>
       </div>
 
       <!-- Bride Section -->
       <div class="profile-bride">
+        <div class="instagram-link-wedding-one">
+          <a href="https://www.instagram.com/raizora_indonesia" target="_blank"
+            ><i class="fa-brands fa-instagram"> instagram</i></a
+          >
+        </div>
         <div class="profile-content">
-          <h2 class="role">The Bride</h2>
+          <h2 class="role">Mempelai Wanita</h2>
           <h1 class="name">Karina Fidelta</h1>
           <p class="description">
             The first daughter of Mr. Abdul Hasan, S.H & Mrs. Shinta Ariani,
@@ -63,19 +71,23 @@
       </div>
 
       <!-- Groom Section -->
-      <div class="profile-groom" id="section2">
+      <div class="profile-groom">
+        <div class="instagram-link-wedding-two">
+          <a href="#"><i class="fa-brands fa-instagram"> instagram</i></a>
+        </div>
         <div class="profile-content">
-          <h2 class="role">The Groom</h2>
+          <h2 class="role">Pengantin Pria</h2>
           <h1 class="name">Kevin Nathanael</h1>
           <p class="description">
             The second son of Mr. Ibnu Hamid, S.H & Mrs. Tazkia, S.Sos
           </p>
         </div>
       </div>
+
       <!-- Journey Section -->
 
       <div class="journey-section">
-        <h2>Our Journey</h2>
+        <h2>Perjalanan Kami</h2>
         <p>A happy marriage is the union of two good forgivers.</p>
         <div class="journey-details">
           <p>
@@ -97,69 +109,82 @@
 
       <!-- Count Section -->
       <div class="count-section">
-        <h2>Count the Date</h2>
+        <h2>Waktu Pernikahan</h2>
         <div id="countdown" class="countdown">
           <div class="countdown-item">
             <span class="countdown-number" id="days">00</span>
-            <span class="countdown-label">Days</span>
+            <span class="countdown-label">Hari</span>
           </div>
           <div class="countdown-item">
             <span class="countdown-number" id="hours">00</span>
-            <span class="countdown-label">Hours</span>
+            <span class="countdown-label">Jam</span>
           </div>
           <div class="countdown-item">
             <span class="countdown-number" id="minutes">00</span>
-            <span class="countdown-label">Minutes</span>
+            <span class="countdown-label">Menit</span>
           </div>
           <div class="countdown-item">
             <span class="countdown-number" id="seconds">00</span>
-            <span class="countdown-label">Seconds</span>
+            <span class="countdown-label">Detik</span>
           </div>
         </div>
-        <a href="#" class="btn" onclick="addToCalendar()">Save the Date</a>
+        <a href="#" class="btn" onclick="addToCalendar()"
+          ><i class="fa-solid fa-calendar-days"></i>Save the Date</a
+        >
       </div>
 
       <!-- event section -->
 
       <div class="event-section">
-        <h2>Wedding Event</h2>
+        <h2>Acara Pernikahan</h2>
         <div class="event-details">
           <p><strong>Holy Matrimony:</strong> [Time and Location]</p>
-          <a href="#" class="btn" onclick="openMaps()">View on Google Maps</a>
+          <a href="#" class="btn" onclick="openMaps()"
+            ><i class="fa-solid fa-location-dot"></i>Google Maps</a
+          >
           <p><strong>Reception:</strong> [Time and Location]</p>
-          <a href="#" class="btn" onclick="openMaps()">View on Google Maps</a>
+          <a href="#" class="btn" onclick="openMaps()"
+            ><i class="fa-solid fa-location-dot"></i>Google Maps</a
+          >
         </div>
       </div>
 
-      <!-- Gallery Images -->
       <div class="gallery-section">
-        <h2>Our Gallery</h2>
-        <div class="gallery">
-          <img src="path_to_image1.jpg" alt="Couple Photo 1" />
-          <img src="path_to_image2.jpg" alt="Couple Photo 2" />
-          <img src="path_to_image3.jpg" alt="Couple Photo 3" />
-          <img src="path_to_image4.jpg" alt="Couple Photo 4" />
-          <img src="path_to_image5.jpg" alt="Couple Photo 5" />
-          <img src="path_to_image6.jpg" alt="Couple Photo 6" />
-
-          <!-- Video -->
+        <div class="video-background">
+          <video autoplay muted loop>
+            <source src="path_to_background_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="content">
+          <h2>Galeri Kami</h2>
           <div class="video-container">
             <video controls>
-              <source src="path_to_video.mp4" type="video/mp4" />
+              <source src="path_to_main_video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+          </div>
+          <div class="gallery">
+            <img src="path_to_image1.jpg" alt="Couple Photo 1" />
+            <img src="path_to_image2.jpg" alt="Couple Photo 2" />
+            <img src="path_to_image3.jpg" alt="Couple Photo 3" />
+            <img src="path_to_image4.jpg" alt="Couple Photo 4" />
+            <img src="path_to_image5.jpg" alt="Couple Photo 5" />
+            <img src="path_to_image6.jpg" alt="Couple Photo 6" />
           </div>
         </div>
       </div>
 
       <!-- Gift Section -->
       <div class="gift-section">
-        <h2>Wedding Gift</h2>
-        <a href="#" class="btn" onclick="showGiftInfo()">Send a Gift</a>
+        <h2>Hadiah Pernikahan</h2>
+        <a href="#" class="btn" onclick="showGiftInfo()"
+          ><i class="fa-solid fa-gift"></i>Kasih Hadiah</a
+        >
 
         <!-- Hidden Gift Info Section -->
         <div id="gift-info" class="gift-info">
-          <h3>How to Send a Gift</h3>
+          <h3><i class="fa-solid fa-gift"></i>Bagaimana Cara Kirim Hadiah</h3>
           <p>
             Thank you for considering sending a gift! Here’s how you can send a
             gift:
@@ -181,27 +206,44 @@
 
       <!-- Wish Section -->
       <div class="wish-section">
-        <h2>Wedding Wish</h2>
+        <h2>Ucapan Pernikahan</h2>
         <form id="wishForm">
-          <input type="text" id="nameInput" placeholder="Your Name" required />
+          <input type="text" id="nameInput" placeholder="Nama" required />
           <textarea
             id="wishInput"
             rows="4"
             cols="50"
-            placeholder="Your Wish"
+            placeholder="Ucapan"
             required
           ></textarea>
           <br />
-          <button type="submit" class="btn">Submit Wish</button>
+          <button type="submit" class="btn">Kirim Ucapan</button>
         </form>
         <div id="wishes" class="wishes-list"></div>
       </div>
 
       <!-- thank you section -->
       <div class="thank-section">
-        <h2>Thank You</h2>
-        <p>We appreciate your presence on our special day!</p>
+        <h2>Terimakasih</h2>
+        <p>Kami menghargai kehadiran Anda di hari istimewa kami!</p>
         <h3>Karina & Nathan</h3>
+
+        <footer>
+          <div class="powered-by">
+            <h1>POWERED BY</h1>
+          </div>
+
+          <div class="hadirmu">
+            <h2>HADIRMU</h2>
+          </div>
+
+          <div class="subjek">
+            <p class="title">
+              <i class="fa-brands fa-pagelines"></i> UNDANGAN DIGITAL MODERN
+              <i class="fa-brands fa-pagelines"></i>
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
 

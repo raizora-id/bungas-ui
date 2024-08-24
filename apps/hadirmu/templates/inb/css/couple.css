@@ -11,6 +11,7 @@
   text-align: center;
   position: relative;
   padding: 20px; /* Add padding to handle content on smaller screens */
+  z-index: -1;
 }
 
 .couple-section::before {
@@ -30,9 +31,7 @@
   margin: 0;
   font-size: 2em;
   color: #ffffff;
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out 1s forwards;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "poppins", sans-serif;
 }
 
 .couple-section h1 {
@@ -43,23 +42,29 @@
   left: 20px;
   margin: 0;
   font-size: 2.5em;
+  color: #eca15b;
+}
+
+.couple-section h4 {
+  position: absolute;
+  top: 150px; /* Distance from the top edge */
+  left: 20px;
+  margin: 0;
+  font-size: 1.3em;
   color: #ffffff;
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out 1s forwards;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .quote {
   margin-bottom: 5rem;
-
   position: absolute;
   bottom: 20px;
   left: 20px;
   font-size: 1em;
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out 1s forwards;
+  font-family: "poppins", sans-serif;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -68,7 +73,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 /* Responsive Styles */
 
@@ -85,10 +90,27 @@
     top: 60px;
   }
 
-  .quote {
-    font-size: 0.9em;
+  .couple-section h4 {
+    font-size: 1.5em;
     left: 10px;
-    bottom: 10px;
+    top: 135px;
+  }
+
+  .quote {
+    font-size: 1.2em;
+    font-family: "poppins", sans-serif;
+    position: absolute; /* Absolute positioning to stay at the bottom */
+    bottom: 20px; /* Distance from the bottom edge */
+    right: 10%; /* Align text to the right, adjust spacing */
+    transform: translateX(0); /* No need to center horizontally */
+    width: 90%; /* Increase width to use more of the available space */
+    max-width: 1000px; /* Optional: Limit maximum width for very large screens */
+    line-height: 1.5; /* Improve readability */
+    text-align: right; /* Align text to the right */
+    z-index: 1; /* Ensure it's above other elements */
+    padding: 0 10px; /* Add horizontal padding for better spacing */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    border-bottom: 2px solid #ffffff; /* White underline */
   }
 }
 
@@ -109,5 +131,6 @@
     font-size: 0.8em;
     left: 5px;
     bottom: 5px;
+    max-width: 90%;
   }
 }

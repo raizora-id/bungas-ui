@@ -1,9 +1,24 @@
 function openInvitation() {
-  document.getElementById("invitation").style.display = "block";
-  document.querySelector(".cover").style.display = "none";
-  document.getElementById("bgMusic").play();
-  window.scrollTo(0, 0);
-  animateSections();
+  const cover = document.querySelector(".cover");
+  const invitation = document.getElementById("invitation");
+
+  // Display the invitation content immediately
+  invitation.style.display = "block";
+
+  // Hide the cover smoothly
+  setTimeout(() => {
+    cover.style.transition =
+      "transform 0.6s ease-in-out, opacity 0.6s ease-in-out";
+    cover.style.transform = "translateY(-100%)";
+    cover.style.opacity = "0";
+
+    // Once the cover is out of view, hide it completely
+    setTimeout(() => {
+      cover.style.display = "none";
+      invitation.classList.add("show");
+      document.getElementById("bgMusic").play();
+    }, 600); // Match the timeout to the CSS transition duration
+  }, 100); // Slight delay to ensure invitation content is ready
 }
 
 function animateSections() {
@@ -67,9 +82,15 @@ function showGiftInfo() {
   alert("Gift information to be implemented");
 }
 
-//wish
+document.addEventListener("DOMContentLoaded", () => {
+  // Load wishes from local storage
+  loadWishes();
 
-function submitWish() {
+  // Add event listener to the form
+  document.getElementById("wishForm").addEventListener("submit", submitWish);
+});
+
+function submitWish(event) {
   // Prevent form submission and page reload
   event.preventDefault();
 
@@ -79,18 +100,43 @@ function submitWish() {
 
   // Check if fields are not empty
   if (name && wish) {
-    // Create a new wish element
-    const wishElement = document.createElement("div");
-    wishElement.className = "wish-item";
-    wishElement.innerHTML = `<p class="name">${name}</p><p>${wish}</p>`;
+    // Create a new wish object
+    const newWish = { name, wish };
 
-    // Append new wish to the list
-    document.getElementById("wishes").appendChild(wishElement);
+    // Get existing wishes from local storage
+    const wishes = JSON.parse(localStorage.getItem("wishes")) || [];
+
+    // Add the new wish to the array
+    wishes.push(newWish);
+
+    // Save updated wishes to local storage
+    localStorage.setItem("wishes", JSON.stringify(wishes));
+
+    // Display the new wish
+    displayWish(newWish);
 
     // Clear input fields
     document.getElementById("nameInput").value = "";
     document.getElementById("wishInput").value = "";
   }
+}
+
+function loadWishes() {
+  // Get existing wishes from local storage
+  const wishes = JSON.parse(localStorage.getItem("wishes")) || [];
+
+  // Display each wish
+  wishes.forEach((wish) => displayWish(wish));
+}
+
+function displayWish(wish) {
+  // Create a new wish element
+  const wishElement = document.createElement("div");
+  wishElement.className = "wish-item";
+  wishElement.innerHTML = `<p class="name">${wish.name}</p><p>${wish.wish}</p>`;
+
+  // Append new wish to the list
+  document.getElementById("wishes").appendChild(wishElement);
 }
 
 // Attach event listener to form

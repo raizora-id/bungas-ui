@@ -21,38 +21,39 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: -1; /* Ensure overlay is behind the content */
+  z-index: -1; /* Ensure overlay is behind content */
 }
 
-.profile-groom::after {
-  position: relative;
-  z-index: 1; /* Ensure content is above the overlay */
-}
-
-.profile-section h1 {
-  font-size: 3em;
-  color: #f8b195;
+.profile-groom h2 {
+  font-size: 1.5em;
+  color: #ffffff;
   margin: 0;
   opacity: 0;
   animation: fadeIn 1s ease-in-out 2s forwards;
 }
 
-.profile-section p {
-  font-size: 1.2em;
+.profile-groom h1 {
+  font-size: 2.5em;
+  color: #ffffff;
   margin: 10px 0;
   opacity: 0;
   animation: fadeIn 1s ease-in-out 2.5s forwards;
-  font-family: "Courier New", Courier, monospace;
+}
+
+.profile-groom p {
+  font-size: 1.2em;
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 3s forwards;
+  font-family: "poppins, sans-serif";
   margin-bottom: 10px;
 }
 
-.quote {
-  font-size: 1em;
-  margin-top: 20px;
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out 3s forwards;
+.profile-groom .name {
+  border-bottom: 2px solid #ffffff; /* White underline */
+  color: #eca15b;
 }
-
+/* Keyframes for fadeIn effect */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -64,17 +65,20 @@
   }
 }
 
-/* Responsive Styles */
+/* Responsive Styles for Groom Profile */
 @media (max-width: 768px) {
   .profile-groom {
     padding: 10px;
   }
 
-  .profile-section h1 {
-    font-size: 2.5em;
+  .profile-groom h1 {
+    font-size: 2em;
+  }
+  .profile-groom h2 {
+    font-size: 1.2em;
   }
 
-  .profile-section p {
+  .profile-groom p {
     font-size: 1em;
   }
 
@@ -88,15 +92,32 @@
     padding: 5px;
   }
 
-  .profile-section h1 {
+  .profile-groom h1 {
     font-size: 2em;
   }
 
-  .profile-section p {
+  .profile-groom h2 {
+    font-size: 1em;
+  }
+
+  .profile-groom p {
     font-size: 0.9em;
   }
 
   .quote {
     font-size: 0.8em;
   }
+}
+
+.instagram-link-wedding-two {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: 0.5s;
+}
+
+.instagram-link-wedding-two:hover {
+  background-color: #ffffff91;
+  padding: 6px;
+  border-radius: 6px;
 }
