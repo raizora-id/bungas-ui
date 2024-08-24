@@ -27,6 +27,7 @@
 .profile-content {
   position: relative;
   z-index: 1; /* Ensure content is above the overlay */
+  margin-bottom: 80px;
 }
 
 .profile-bride h2 {
